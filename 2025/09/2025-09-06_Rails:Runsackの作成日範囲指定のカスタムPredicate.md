@@ -13,6 +13,7 @@ end
 
 1. predicate名の設定
 config.add_predicate 'lteq_end_of_day'
+
 役割: カスタムPredicateの名前を定義
 使用場面: ビューで created_at_lteq_end_of_day として使用
 命名規則: {カラム名}_{predicate名} の形で呼び出される
@@ -22,6 +23,7 @@ config.add_predicate 'lteq_end_of_day'
 
 2. arel_predicate（必須）
 arel_predicate: 'lteq'
+
 役割: 実際のSQL条件を指定
 lteq: "Less Than or Equal" (以下)
 他の選択肢: eq(等しい), gteq(以上), matches(LIKE), in(IN句)など

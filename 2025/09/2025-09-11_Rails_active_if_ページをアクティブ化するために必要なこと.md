@@ -1,7 +1,7 @@
 1. ヘルパーメソッドの定義
 まず、app/helpers/application_helper.rbにactive_ifメソッドを定義します：
 
-# app/helpers/application_helper.rb
+app/helpers/application_helper.rb
 ```
 module ApplicationHelper
   def active_if(path)
